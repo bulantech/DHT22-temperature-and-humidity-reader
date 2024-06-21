@@ -1,0 +1,27 @@
+.so-widget-sow-image-grid-default-46e3cddde1e5 .sow-image-grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 0;
+  text-align: center;
+}
+.so-widget-sow-image-grid-default-46e3cddde1e5 .sow-image-grid-wrapper .sow-image-grid-image {
+  padding: 0px 10px 10px 10px;
+  display: inline-block;
+}
+.so-widget-sow-image-grid-default-46e3cddde1e5 .sow-image-grid-wrapper .sow-image-grid-image img {
+  opacity: 0;
+  max-width: 100%;
+  height: auto;
+}
+.so-widget-sow-image-grid-default-46e3cddde1e5 .sow-image-grid-wrapper .sow-image-grid-image .image-title {
+  
+  
+  
+  
+  
+  line-height: 1.25;
+  
+  
+}

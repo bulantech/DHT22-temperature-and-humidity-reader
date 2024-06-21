@@ -1,0 +1,61 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ @CHARSET "UTF-8";
+
+.woosticker{ position:absolute; background-image:url(../images/wli_label_sprite.png);background-repeat: no-repeat;color:transparent; text-indent: -9999px; z-index:99; }
+
+.woosticker.pos_right{ right:0px; left:inherit; }
+.woosticker.pos_left{ left:0px; top:0px; }
+.woosticker.pos_right_detail{right: 51.9%;}
+.wc-product--images .woosticker.pos_right_detail{right:0;}
+.woosticker.pos_left_detail{left:0px ;}
+ul li a span.woosticker.pos_right_detail{right:0px ;}
+ 
+.woosticker.new_ribbon_left, .woosticker.onsale_ribbon_left, .woosticker.soldout_ribbon_left{ left:0px; top:0px; width: 56px; height: 54px; }
+.woosticker.new_ribbon_right, .woosticker.onsale_ribbon_right, .woosticker.soldout_ribbon_right{ right:0px; top:0px; left:auto; width: 56px; height: 54px;}
+ 
+.woosticker.new_round_right, .woosticker.onsale_round_right, .woosticker.soldout_round_right{ right:0px; top:10px; left:auto; width: 43px; height: 43px; }
+.woosticker.new_round_left, .woosticker.onsale_round_left, .woosticker.soldout_round_left{ left: 10px !important; top: 10px !important; width: 43px; height: 43px;}
+ 
+.woosticker.new_ribbon_left { background-position:-1px -1px; }
+.woosticker.new_ribbon_right { background-position:-72px -1px; }
+.woosticker.new_round_left, .woosticker.new_round_right { background-position:-2px -186px; } 
+ 
+.woosticker.onsale_ribbon_left { background-position:-1px -63px; }
+.woosticker.onsale_ribbon_right{ background-position:-72px -63px; }
+.woosticker.onsale_round_left, .woosticker.onsale_round_right {background-position:-2px -234px;}
+ 
+.woosticker.soldout_ribbon_left { background-position:-1px -123px; }
+.woosticker.soldout_ribbon_right{background-position:-72px -123px;}
+.woosticker.soldout_round_left, .woosticker.soldout_round_right {background-position:-2px -282px; height: 44px;}
+ 
+.woosticker.custom_sticker_image{top: 0px; width: 54px; height:54px; border-style: none; background-size:54px auto; background-position:center center; }
+
+.wc-product-inner .wc-product-contents>span { margin-top: 0; }
+
+.related.products .woosticker.pos_right_detail { right: 0; }
+.woosticker.custom_sticker_text { position:absolute; top:0; z-index:99; background-image:none; text-indent:initial; background-color:#000; color:#fff; text-align:center; margin:10px !important; padding:10px; min-width:43px; min-height:43px; font-size:10px; line-height:43px; font-weight:bold; }
+
+.woosticker.custom_sticker_text.woosticker_round {border-radius:100%; -webkit-border-radius:100%;}
+.woosticker.custom_sticker_text.woosticker_ribbon {min-width: 50px; width: auto; height: inherit; min-height: auto; padding: 5px 15px; line-height: 16px; margin:0 !important;}
+.woosticker.custom_sticker_text.woosticker_ribbon:before { content:''; width: 0; height: 0; border-style: solid; border-width: 0 12px 7px 0; border-color: transparent #000 transparent transparent; position: absolute; left: 0; bottom: -7px;}
+.woosticker.custom_sticker_text.pos_left.woosticker_ribbon:before { content:''; transform: rotateY(180deg); width: 0; height: 0; border-style: solid; border-width: 0 12px 7px 0; border-color: transparent #000 transparent transparent; position: absolute; left: auto; right: 0; bottom: -7px;}
+.woosticker.custom_sticker_text.pos_left_detail.woosticker_ribbon:before { transform: rotateY(180deg); left: auto; right: 0; }
+
+@media only screen and (max-width:767px){
+	.woosticker.pos_right_detail{ right:0px; }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  
+and (orientation : portrait) { 
+	.woosticker.new_ribbon_right,
+	.woosticker.onsale_ribbon_right,
+	.woosticker.soldout_ribbon_right,
+	.woosticker.new_round_right,
+	.woosticker.onsale_round_right,
+	.woosticker.soldout_round_right{ right:0px !important; }
+}
+.woocommerce-js ul.products-block-post-template li.product {position: relative;}
